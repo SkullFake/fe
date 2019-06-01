@@ -7,7 +7,7 @@ import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 import BookRestaurant from './bookRestaurant/BookRestaurant';
 import PlaceIcon from '@material-ui/icons/Place';
-import { host, port } from '../../const/node-server-config';
+import { host } from '../../const/node-server-config';
 import LoadingSpinner from '../../shared/loading-spinner/LoadingSpinner'
 
 class Restaurant extends React.Component {
@@ -18,7 +18,7 @@ class Restaurant extends React.Component {
   };
 
   componentWillMount() {
-    fetch(`${host}:${port}/getRestourants`, {
+    fetch(`${host}/getRestourants`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',

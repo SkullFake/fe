@@ -4,7 +4,7 @@ import { Grid, Button, Dialog, FormControl, InputLabel, Input, Typography, TextF
 import BeenhereIcon from '@material-ui/icons/Beenhere';
 import CloseIcon from '@material-ui/icons/Close';
 import InputMask from 'react-input-mask';
-import { host, port } from '../../../const/node-server-config';
+import { host } from '../../../const/node-server-config';
 
 import { MuiPickersUtilsProvider, DatePicker } from 'material-ui-pickers';
 import MomentUtils from '@date-io/moment';
@@ -170,7 +170,7 @@ export class BookRestaurant extends React.Component {
     e.preventDefault()
     this.setState({ submit: true });
 
-    fetch(`${host}:${port}/book`, {
+    fetch(`${host}/book`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',

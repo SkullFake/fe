@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Card, CardActionArea, CardContent, CardMedia, Typography} from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import { host, port } from '../../../../const/node-server-config'
+import { host } from '../../../../const/node-server-config'
 import Pagination from '../../../pagination/Pagination'
 import LoadingSpinner from '../../../../shared/loading-spinner/LoadingSpinner'
 
@@ -55,7 +55,7 @@ this.setState({ItemsArr})
   }
   
   componentWillMount() {
-    fetch(`${host}:${port}/getRestourants`, {
+    fetch(`${host}/getRestourants`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',

@@ -1,2 +1,1 @@
-export const port = 5000;
-export const host = 'http://localhost';
+export const host = 'https://restogrambe.herokuapp.com';

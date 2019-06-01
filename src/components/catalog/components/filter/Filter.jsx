@@ -6,7 +6,7 @@ import MomentUtils from '@date-io/moment';
 import InputMask from 'react-input-mask';
 import { Scrollbars } from 'react-custom-scrollbars';
 import 'moment/locale/uk';
-import { host, port } from '../../../../const/node-server-config';
+import { host } from '../../../../const/node-server-config';
 
 
 const InlineDatePickerTheme = createMuiTheme({
@@ -131,7 +131,8 @@ export class Home extends React.Component {
   }
 
   componentWillMount() {
-    fetch(`${host}:${port}/getRestourants`, {
+    console.log(`${host}/getRestourants`)
+    fetch(`${host}/getRestourants`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',

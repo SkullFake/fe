@@ -3,7 +3,7 @@ import React from 'react';
 import { Grid, Button, Dialog, FormControl, InputLabel, Input, Typography } from '@material-ui/core';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import CloseIcon from '@material-ui/icons/Close';
-import { host, port } from '../../../const/node-server-config';
+import { host } from '../../../const/node-server-config';
 
 export class NewRestaurant extends React.Component {
   constructor(props) {
@@ -95,7 +95,7 @@ export class NewRestaurant extends React.Component {
     e.preventDefault()
     this.setState({ submit: true });
 
-    fetch(`${host}:${port}/newRestaurant`, {
+    fetch(`${host}/newRestaurant`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
