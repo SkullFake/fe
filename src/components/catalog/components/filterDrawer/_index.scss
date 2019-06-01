@@ -1,0 +1,15 @@
+.filterDrawer {
+
+    &__btn {
+        position: fixed;
+        z-index: 1;
+    }
+
+    &__body{
+        background-color: floralwhite;
+        .filter__section{
+            border: none;
+            background-color: transparent;   
+        }
+    }
+} 

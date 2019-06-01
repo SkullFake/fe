@@ -1,0 +1,73 @@
+.newRestaurant {
+    color: #fff;
+
+    &__icon {
+        margin-right: 5px;
+    }
+
+    &__openBtn {
+        background-color: bisque;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+    }
+
+    &__label {
+        margin: 10px 20px 10px;
+
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+    }
+
+    &__submitBtn__textBtn {
+        color: white;
+        margin: 2px 5px 0;
+    }
+
+    &__closeBtn{
+        position: absolute;
+        right: 0;
+        width: 27px;
+        height: 27px;
+        color: lightsalmon;
+    }
+
+    &__submitBtn {
+        margin-top: 25px;
+        color: white;
+        padding: 10px 0;
+    }
+
+    &__title {
+        font-size: 18px;
+        padding: 20px 20px 0;
+        text-align: center;
+        color: grey;
+    }
+
+    // very bad realization, I don`t know how to do it right
+    &__dialog > div > div {
+        min-width: 300px;
+    }
+
+    &__SubmitMsg {
+        font-size: 18px;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .newRestaurant {
+
+        &__openBtn {
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import './components/lang/index';
+@import './components/signIn/index';
+
+.header {
+    margin: 15px 0 5px;
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        &__logo {
+            width: 90%;
+        }
+    }
+}

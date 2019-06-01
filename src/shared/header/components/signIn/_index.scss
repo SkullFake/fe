@@ -1,0 +1,54 @@
+.signIn {
+    display: flex;
+
+    &__icon{
+        padding-right: 5px;
+    }
+
+    &__openBtn {
+        text-transform: none;
+    }
+
+    &__textBtn {
+        white-space: nowrap;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        margin: 10px 20px 10px;
+    }
+
+    &__submitBtn__textBtn {
+        color: white;
+        margin: 2px 5px 0;
+    }
+
+    &__submitBtn {
+        margin-top: 25px;
+        color: white;
+        padding: 10px 0;
+    }
+
+    // very bad realization, I don`t know how to do it right
+    &__dialog > div > div {
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .signIn {
+        width: 0;
+
+        &__textBtn {
+            display: none;
+        }
+
+        &__openBtn {
+            margin: auto;
+        }
+    }
+}

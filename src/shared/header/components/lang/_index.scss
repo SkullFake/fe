@@ -1,0 +1,69 @@
+.lang {
+    &__flagImg{
+        height: 18px;
+        width: 24px;
+        margin-right: 5px;
+    }
+
+    &__textBtn {
+        text-transform: none;
+        white-space: nowrap;
+    }
+
+    &__label {
+        margin: 35px 20px 0px;
+        width: 300px;
+
+        fieldset {
+            border-color: grey!important;
+        }
+    }
+
+    &__saveBtn {
+        padding: 15px;
+        margin-top: 25px;
+        color: white;
+    }
+
+    &__dialog {
+        padding-top: 15px;
+    }
+
+    &__closeBtn{
+        position: absolute;
+        right: 0;
+        width: 27px;
+        height: 27px;
+        color: lightsalmon;
+    }
+
+    &__openBtn{
+        float: right;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .lang {
+        &__textBtn {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .lang {
+        &__openBtn {
+            margin: 0 -10px;
+            float: unset;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .lang {
+        &__label {
+            width: auto;
+        }
+    }
+}
+

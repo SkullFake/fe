@@ -1,0 +1,48 @@
+@import './bookRestaurant/index';
+
+.restaurant {
+
+    &__title {
+        font-size: 30px;
+        margin: 16px 0;
+        color: darkslategrey;
+    }
+
+    &__location {
+        font-size: 18px;
+        padding: 20px 20px 0;
+        text-align: center;
+        color: grey;
+
+        svg {
+            position: relative;
+            bottom: -4px;
+        }
+    }
+
+    &__map {
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    &__time {
+        width: 300px;
+        margin: 25px auto;
+
+        &_title {
+            font-size: 22px;
+        }
+
+        &_day {
+            font-size: 16px;
+        }
+
+        &_currentDay {
+            color: green;
+            font-weight: 500;
+        }
+    }
+}

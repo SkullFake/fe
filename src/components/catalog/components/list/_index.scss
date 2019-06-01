@@ -1,0 +1,12 @@
+.list {
+    &:after {
+        content: "";
+        flex: auto;
+        flex-grow: 0;
+        width: 41.666667%;
+      }
+      
+    &__item {
+        margin-bottom: 30px;
+    }
+}
